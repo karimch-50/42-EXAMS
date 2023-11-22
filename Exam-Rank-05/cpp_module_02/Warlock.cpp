@@ -6,7 +6,7 @@
 /*   By: kchaouki <kchaouki@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 11:38:22 by kchaouki          #+#    #+#             */
-/*   Updated: 2023/11/13 18:12:19 by kchaouki         ###   ########.fr       */
+/*   Updated: 2023/11/21 17:09:47 by kchaouki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,4 +80,3 @@ void Warlock::launchSpell(std::string _spellName, const ATarget& _ATarget)
 	if (tmp)
 		tmp->launch(_ATarget);
 }
-

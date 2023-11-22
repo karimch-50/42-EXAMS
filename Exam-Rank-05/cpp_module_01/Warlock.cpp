@@ -6,7 +6,7 @@
 /*   By: kchaouki <kchaouki@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 11:38:22 by kchaouki          #+#    #+#             */
-/*   Updated: 2023/11/13 18:22:49 by kchaouki         ###   ########.fr       */
+/*   Updated: 2023/11/20 13:17:32 by kchaouki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ void Warlock::forgetSpell(std::string _spellName)
 	{
 		if ((*it)->getName() == _spellName)
 		{
-			inventory.erase(it--);
+			inventory.erase(it);
 			break ;
 		}
 	}
