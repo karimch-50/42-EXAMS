@@ -135,8 +135,8 @@ int main(int ac, char **av) {
 				clients[client_fd].id = next_id++;
 				clients[client_fd].msg = NULL;
 				sprintf(bufWrite, "server: client %d just arrived\n", clients[client_fd].id);
-				broadCast(client_fd, bufWrite);
 				FD_SET(client_fd, &fds);
+				broadCast(client_fd, bufWrite);
 				break ;
 			}
 			else {
